@@ -86,6 +86,11 @@ nav {
     gap: 40px;
     background: #090909;
 }
+.nav-links {
+
+    display: flex;
+    gap: 40px;
+}
 nav a {
 
     color: white;
@@ -98,6 +103,26 @@ nav a {
 }
 nav a:hover {
     color: #d49c4f;
+}
+.menu-toggle {
+
+    display: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+.logo {
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
 }
 .card {
     background: #111111;
@@ -240,4 +265,66 @@ section h2 {
 .contact-form button:hover {
     transform: translateY(-3px);
     background: #e8af5d;
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+    font-size: 3.5rem;
+    .menu-toggle {
+
+        display: block;
+    }
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(0,0,0,0.95);
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+
+        display: flex;
+    }
+
+    nav {
+
+        padding: 20px;
+    }
+}
+.hero {
+    padding: 30px;
+}
+nav {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.services {
+    grid-template-columns: 1fr;
+}
+.reference-grid {
+    grid-template-columns: 1fr;
+}
+audio {
+    width: 100%;
+}
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.contact-form {
+    width: 100%;
+}
 }
