@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon"
+            type="image/png"
+            href="assets/images/logo_dark.png">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            
+    <div class="logo">
+        <a href="#Home">
+        <img src="assets/images/logo_golden.png" alt="Dawid Mikler Logo">
+    </a>
+    </div>
+
+    <div class="menu-toggle">
+        ☰
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#Home">Home</a>
+        <a href="#services">Leistungen</a>
+        <a href="#references">Portfolio</a>
+        <a href="#about">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+        </nav>
+
+<header class="hero" id="Home">
+        <div class="hero-content">
+
+    <p>Dawid Mikler, Diploma Audio Engineer</p>
+
+    <h1>
+      KLANG,<br>
+      DER BLEIBT.
+    </h1>
+
+    <p class="subtitle">
+      Professionelles Audio Editing
+      und Mixing für Sprache,
+      Podcasts und Musik.
+    </p>
+
+    <a href="#references"
+        class="hero-button">
+        Referenzen ansehen
+
+</a>
+
+  </div>
+</header>
+
+<section class="services" id="services">
+        <div class="card">
+            <h3>Audio Editing</h3>
+             <p>
+            Podcasts, Interviews,
+            Sprachaufnahmen,
+            Rauschreduzierung,
+            Schnitt und Optimierung.
+            </p>
+        </div>
+
+        <div class="card">
+        <h3>Mixing</h3>
+         <p>
+            Pop, Rock,
+            Punk und Metal.
+
+            Authentische und
+            druckvolle Mixe für
+            Streaming und physischen Release.
+        </p>
+        </div>
+
+        <div class="card">
+        <h3>Mastering</h3>
+           <p>
+            Lautheitsoptimierung,
+            Klangveredelung und
+            finale Vorbereitung
+            für Streaming-Plattformen.
+        </p>
+        </div>
+</section>
+<section class="references" id="references">
+
+    <h2>Referenzen</h2>
+
+<p>Aktuell entsteht mein öffentliches Portfolio. <br><br>
+
+Nach Abschluss meines Studiums zum
+Diploma Audio Engineer arbeite ich
+an mehreren Projekten, die nach ihrem Release
+hier veröffentlicht werden.<br><br>
+
+Bis dahin findest du auf meinem YouTube-Kanal
+Beispiele meiner Arbeit als Musiker,
+Produzent und Audio Engineer.</p>
+<!--
+    <div class="reference-grid">
+
+        <div class="reference-card">
+
+            <h3>Podcast Editing</h3>
+
+            <audio controls>
+                <source src="audio/podcast.mp3">
+            </audio>
+
+        </div>
+
+        <div class="reference-card">
+
+            <h3>Metal Mixing</h3>
+
+            <audio controls>
+                <source src="audio/metal.mp3">
+            </audio>
+
+        </div>
+
+        <div class="reference-card">
+
+            <h3>Pop Punk Mixing</h3>
+
+            <audio controls>
+                <source src="audio/poppunk.mp3">
+            </audio>
+
+        </div>
+-->
+    </div>
+
+</section>
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="assets/images/dawid_buehne.jpeg"
+             alt="Dawid live auf der Bühne, Rock am Schellbach 2023, foto Hendrik Falk" title="Foto: Hendrik Falk">
+    </div>
+
+    <div class="about-content">
+
+        <h2>Über mich</h2>
+
+        <p>
+            Hi, ich bin Dawid – Audio Engineer,
+            Mediengestalter Bild und Ton und Musiker
+            aus der Region Hannover.
+
+            <br><br>
+
+            Meine musikalische Reise begann mit elf Jahren
+            an der Gitarre. Heute verbinde ich meine Erfahrung
+            als Musiker mit meiner Leidenschaft für Recording,
+            Editing und Mixing.
+
+            <br><br>
+
+            Mir ist wichtig, dass Künstler authentisch
+            klingen und ihre Persönlichkeit im Mix erhalten
+            bleibt. Jedes Projekt verdient einen individuellen
+            Ansatz statt vorgefertigter Lösungen.
+        </p>
+
+    </div>
+
+</section>
+<section id="kontakt" class="contact">
+
+    <h2>Projekt anfragen</h2>
+
+    <p>
+    Lass uns über dein Projekt sprechen. <br><br>
+
+    Ob Podcast, Sprachaufnahme
+    oder Musikproduktion –
+    ich freue mich auf deine Nachricht.
+    </p>
+
+   <form id="form"
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST">
+
+         <input
+            type="hidden"
+            name="access_key"
+            value="eb569010-fbe4-4e2a-a596-b71d80c5c9b4">
+
+        <input 
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display:none;">
+        
+        <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="E-Mail"
+            required>
+
+       <input
+            type="text"
+            name="project"
+            placeholder="Projektart">
+
+        <textarea
+            name="message"
+            placeholder="Erzähl mir etwas über dein Projekt..."
+            rows="6"
+            required>
+        </textarea>
+
+        <button type="submit">
+            Anfrage senden
+        </button>
+
+        <input
+        type="hidden"
+        name="redirect"
+        value="https://dawidplaysguitar.github.io/portfolio-page/danke.html">
+
+    </form>
+    <div class="social-links">
+
+    <a href="mailto:mikler1303@gmail.com">
+        E-Mail
+    </a>
+
+    <a href="https://www.linkedin.com/in/dawid-mikler-34353a1a2/">
+        LinkedIn
+    </a>
+
+    <a href="https://www.youtube.com/@dawidplaysguitar2169"
+       target="_blank">
+        YouTube
+    </a>
+
+    <a href="https://instagram.com/dawid_mikler"
+       target="_blank">
+        Instagram
+    </a>
+
+</div>
+
+</section>
+<footer>
+
+    <h3>Dawid Mikler</h3>
+
+    <p>Diploma Audio Engineer</p>
+
+    <div class="footer-links">
+
+        <a href="https://youtube.com/@dawidplaysguitar2169">
+            YouTube
+        </a>
+
+        <a href="https://instagram.com/dawid_mikler">
+            Instagram
+        </a>
+
+        <a href="mailto:mikler1303@gmail.com">
+            E-Mail
+        </a>
+        <a href="https://www.linkedin.com/in/dawid-mikler-34353a1a2/">
+        LinkedIn
+        </a>
+        <a href="impressum.html">
+            Impressum
+        </a>
+
+        <a href="datenschutz.html">
+            Datenschutz
+        </a>
+
+    </div>
+
+</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
